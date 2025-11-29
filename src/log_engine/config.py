@@ -10,6 +10,7 @@ class LogConfig:
         log_level: str = "INFO",
         when: str = "midnight",
         interval: int = 1,
+        formatter_type: str = "text",
     ):
         self.log_dir = log_dir
         self.file_name = file_name
@@ -19,3 +20,4 @@ class LogConfig:
         self.log_level = log_level
         self.when = when
         self.interval = interval
+        self.formatter_type = formatter_type

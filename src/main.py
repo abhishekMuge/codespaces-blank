@@ -6,7 +6,8 @@ def main():
     config = LogConfig(
         rotation_type="size",
         max_bytes=1024 * 1024,  # 1MB
-        backup_count=3
+        backup_count=3,
+        formatter_type="json"
     )
 
     logger = create_logger(config)
